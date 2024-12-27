@@ -1,0 +1,66 @@
+.sidebar {
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    background-color: #2869e1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: #a0a0a0;
+    color: rgb(255, 0, 0);
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #636363;
+    color: white;
+}
+
+div.content {
+    margin-left: 100px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+    text-align: center;
+    float: none;
+    }
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:disabled):not(.disabled):active, 
+.show>.btn-primary.dropdown-toggle{
+    color: #fff;
+    background-color: #F7B432;
+    border-color: #F7B432;
+}
+
+.btn-primary:hover {
+    color: #ffffff;
+    background-color: black;
+    border-radius: 15px;
+    transition: 2s;
+    scale: 2;
+}
